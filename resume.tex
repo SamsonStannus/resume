@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\geometry{top=40px, bottom=10px, textheight=750px, textwidth=450px} % Saving trees ;-)
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+\definecolor{gray}{RGB}{22, 27, 61}  % Color
+\definecolor{blue}{RGB}{84, 110, 255}
+\color{gray}
+
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+
+\sectionfont{%			            % Change font of \section command
+    \vspace*{-0.75em}
+	\usefont{OT1}{phv}{m}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-10pt}{1pt}}
+	
+\setstretch{1.10}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{0.25em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\noindent \Huge \usefont{OT1}{phv}{m}{n} #1
+    \par \normalsize \normalfont}
+		
+\newcommand{\DatedEntry}[2]{
+        \noindent \usefont{OT1}{phv}{b}{n} #1 \hfill
+        \usefont{OT1}{phv}{m}{n} #2 \par
+        \normalsize \normalfont}
+        
+\newcommand{\TextEntry}[1]{
+    \noindent \usefont{OT1}{phv}{m}{n} #1 \par
+    \normalsize \normalfont}
+		
+\newcommand{\ContactEntry}[3]{
+    \vspace*{0.25em}
+    \noindent \usefont{OT1}{phv}{m}{n} #1 \mid #2 \mid #3 \par
+    \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[5]{
+		\DatedEntry{#1}{#2}
+        \TextEntry{#3, #4}
+        \TextEntry{#5}}
+        
+\newcommand{\ProjectEntry}[2]{
+    \noindent \usefont{OT1}{phv}{b}{n} #1 \par
+    \normalsize \normalfont
+    \TextEntry{#2}}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\DatedEntry{#1}{#2}
+        \TextEntry{#3}
+        \TextEntry{#4}}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+% \vspace*{1em}
+\MyName{Samson Stannus}
+\vspace*{0.25em}
+\TextEntry{Montreal, QC, Canada \textbullet\hspace*{0.05em} 
+US and Canadian Citizen}
+\TextEntry{\small{+1 (514) 430-6498} $\vert$ \large\href{mailto:samsonstannus@gmail.com}{samsonstannus@gmail.com} $\vert$ \href{https://github.com/SamsonStannus}{\faGithub/SamsonStannus} $\vert$  \href{https://www.linkedin.com/in/samsonstannus/}{\faLinkedin/SamsonStannus}}
+
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Work experience}
+\vspace*{-0.5em}
+\WorkEntry{Software Developer I}{Mar '18 - Current}
+{Expedia Group, Geography Team}
+{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
+  \item Collaborated with geographers and data scientists to build applications to import 100,000+ geographic entities to cover 99\% of destination searches from Google.
+  \item Developed a computer vision application to generate geography geometries from images.
+  \item Created a UI to edit geometry which enabled geographers to fix 300+ invalid geographic entities.
+\end{itemize}}
+
+\sepspace
+
+\WorkEntry{Associate Software Developer}{Jan '17 - Mar '18}
+{Expedia Group, Content Systems Team/Geography Team}
+{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
+  \item Rebuilt RESTful Image processing web services to utilize a Kafka streaming architecture which reduced the latency of read and update requests by 88\%.
+  \item Built application to import geo-datasets in bulk and display dataset statistics. 
+  \item Developed service to query geography by popularity score percentile ranges.
+\end{itemize}}
+
+\sepspace
+
+\WorkEntry{Software Developer Intern}{Jan '16 - Sep '16}
+{Expedia Group, Content Systems Team}
+{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
+  \item Migrated image processing services on to AWS infrastructure reducing server and storage costs by 95\%.
+  \item Built a custom log-formatter to aid in issue investigation and report creation.
+\end{itemize}}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}
+\vspace*{-0.5em}
+\EducationEntry{McGill University}{Sep '12 - Dec '16}
+{Bachelor of Science}
+{Computer Science}
+{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
+  \item Organized the 2016 annual McGill hackathon (McHacks) for 600+ hackers.
+  \item Represented McGill at the 2016 Ubisoft Game Lab Competition.
+  \item Completed advanced courses in Machine Learning and Computer Graphics.
+\end{itemize}}
+
+%%% Projects and Accolades
+%%% ------------------------------------------------------------
+\NewPart{Projects and Accolades}
+\vspace*{-0.5em}
+\ProjectEntry{Workshop presenter for Expedia Group xTech Conference 2018}
+{Developed workshop on creating interactive geo-data visualizations using Mapbox and React.}
+
+\sepspace
+
+\ProjectEntry{Placed 2nd overall (1st in Montreal) in Expedia Global Hackathon 5.0}
+{Trained a generative adversarial network based on the \href{https://arxiv.org/pdf/1609.04802.pdf}{\bfseries SRGAN paper by Twitter} to enhance the resolution of hotel images.}
+
+\sepspace
+
+\ProjectEntry{Geo-Samesies-Net}
+{A deep learning approach to geography similarity based on \href{https://doi.org/10.1080/13658816.2017.1390119}{\bfseries Toponym Matching paper}.}
+
+\sepspace
+
+\ProjectEntry{gifflr.net}
+{A Text to GIF converter which finds semi-relevant GIF images using the python Tumblr API.}
+
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}
+\vspace*{-0.5em}
+\begin{tabular}{@{}p{200px}p{225px}}
+\noindent \usefont{OT1}{phv}{b}{n} Programming & 
+\noindent \usefont{OT1}{phv}{b}{n} Software and Frameworks \\
+\noindent \usefont{OT1}{phv}{m}{n} Python, Scala, Java, JavaScript & 
+\noindent \usefont{OT1}{phv}{m}{n} Git, Unix, Scalatra, Spring Boot, Splunk, Keras, \\
+& \noindent \usefont{OT1}{phv}{m}{n} Pandas, Scikit-Image, Postgres/PostGIS, AWS, \\ 
+& \noindent \usefont{OT1}{phv}{m}{n} React, Mapbox-GL, \LaTeX  \\
+\end{tabular}
+
+
+\end{document}
