@@ -31,7 +31,7 @@
 \usepackage{graphicx}                    % Enable pdflatex
 \usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
 \usepackage{geometry}
-	\geometry{top=40px, bottom=10px, textheight=750px, textwidth=450px} % Saving trees ;-)
+	\geometry{top=30px, bottom=0px, textheight=750px, textwidth=450px} % Saving trees ;-)
 \usepackage{url}
 \usepackage{setspace}
 \usepackage{hyperref}
@@ -132,30 +132,37 @@ US and Canadian Citizen}
 %%% ------------------------------------------------------------
 \NewPart{Work experience}
 \vspace*{-0.5em}
-\WorkEntry{Software Developer I}{Mar '18 - Current}
+\WorkEntry{Machine Learning Software Developer I}{Sep '19 - Current}
+{Borealis AI, Engineering Team}
+{\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
+  \item Rebuilt ETL pipeline using Airflow to dynamically scale out a Spark cluster saving 96\% of monthly costs over previous implementation.
+\end{itemize}}
+
+\sepspace
+
+\WorkEntry{Software Developer I}{Mar '18 - Sep '19}
 {Expedia Group, Geography Team}
-{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
-  \item Collaborated with geographers and data scientists to build applications to import 100,000+ geographic entities to cover 99\% of destination searches from Google.
-  \item Developed a computer vision application to generate geography geometries from images.
-  \item Created a UI to edit geometry which enabled geographers to fix 300+ invalid geographic entities.
+{\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
+  \item Collaborated with geographers and data scientists to import 100,000+ geographic entities to cover 99\% of destination searches reported by Google.
+  \item Developed a computer vision application to generate geographical boundaries from images.
+  \item Created UI to edit geometry which enabled geographers to fix 500+ invalid geo entities.
 \end{itemize}}
 
 \sepspace
 
 \WorkEntry{Associate Software Developer}{Jan '17 - Mar '18}
 {Expedia Group, Content Systems Team/Geography Team}
-{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
-  \item Rebuilt RESTful Image processing web services to utilize a Kafka streaming architecture which reduced the latency of read and update requests by 88\%.
+{\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
   \item Built application to import geo-datasets in bulk and display dataset statistics. 
-  \item Developed service to query geography by popularity score percentile ranges.
+  \item Rebuilt RESTful Image processing web services to utilize a Kafka streaming architecture which reduced the latency of read and update requests by 88\%.
 \end{itemize}}
 
 \sepspace
 
 \WorkEntry{Software Developer Intern}{Jan '16 - Sep '16}
 {Expedia Group, Content Systems Team}
-{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
-  \item Migrated image processing services on to AWS infrastructure reducing server and storage costs by 95\%.
+{\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
+  \item Migrated image processing pipeline on to AWS infrastructure reducing costs by 95\%.
   \item Built a custom log-formatter to aid in issue investigation and report creation.
 \end{itemize}}
 
@@ -166,7 +173,7 @@ US and Canadian Citizen}
 \EducationEntry{McGill University}{Sep '12 - Dec '16}
 {Bachelor of Science}
 {Computer Science}
-{\begin{itemize}[itemsep=-0.25em, topsep=0.50em, leftmargin=*]
+{\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
   \item Organized the 2016 annual McGill hackathon (McHacks) for 600+ hackers.
   \item Represented McGill at the 2016 Ubisoft Game Lab Competition.
   \item Completed advanced courses in Machine Learning and Computer Graphics.
@@ -205,7 +212,7 @@ US and Canadian Citizen}
 \noindent \usefont{OT1}{phv}{m}{n} Python, Scala, Java, JavaScript & 
 \noindent \usefont{OT1}{phv}{m}{n} Git, Unix, Scalatra, Spring Boot, Splunk, Keras, \\
 & \noindent \usefont{OT1}{phv}{m}{n} Pandas, Scikit-Image, Postgres/PostGIS, AWS, \\ 
-& \noindent \usefont{OT1}{phv}{m}{n} React, Mapbox-GL, \LaTeX  \\
+& \noindent \usefont{OT1}{phv}{m}{n} React, Mapbox-GL, Airflow, \LaTeX  \\
 \end{tabular}
 
 

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1555681022 "/Users/samsonstannus/dev/resume/resume.tex" "/Users/samsonstannus/dev/resume/resume.pdf" "resume" 1555681023
-  "/Users/samsonstannus/dev/resume/resume.aux" 1555681023 720 ca1cfdf2f9c000a7c27a71f571d6b153 ""
-  "/Users/samsonstannus/dev/resume/resume.tex" 1555681022 7984 613df8c7f18834dcc6ca03daa4b2ab0a ""
+["pdflatex"] 1582806528 "/Users/samsonstannus/dev/resume/resume.tex" "/Users/samsonstannus/dev/resume/resume.pdf" "resume" 1582806578
+  "/Users/samsonstannus/dev/resume/resume.aux" 1582806529 720 ca1cfdf2f9c000a7c27a71f571d6b153 ""
+  "/Users/samsonstannus/dev/resume/resume.tex" 1582806526 8202 b81b7d57333cb0bed7732c898afeadfd ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1480098667 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -115,13 +115,13 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "resume.aux" 1555681023 720 ca1cfdf2f9c000a7c27a71f571d6b153 ""
-  "resume.out" 1555681023 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "resume.tex" 1555681022 7984 613df8c7f18834dcc6ca03daa4b2ab0a ""
+  "resume.aux" 1582806529 720 ca1cfdf2f9c000a7c27a71f571d6b153 ""
+  "resume.out" 1582806529 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "resume.tex" 1582806526 8202 b81b7d57333cb0bed7732c898afeadfd ""
   (generated)
-  "resume.out"
   "/Users/samsonstannus/dev/resume/resume.log"
+  "resume.log"
   "resume.aux"
   "/Users/samsonstannus/dev/resume/resume.pdf"
+  "resume.out"
   "resume.pdf"
-  "resume.log"
