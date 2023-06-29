@@ -31,7 +31,7 @@
 \usepackage{graphicx}                    % Enable pdflatex
 \usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
 \usepackage{geometry}
-	\geometry{top=30px, bottom=0px, textheight=750px, textwidth=450px} % Saving trees ;-)
+	\geometry{top=30px, bottom=0px, textheight=750px, textwidth=500px} % Saving trees ;-)
 \usepackage{url}
 \usepackage{setspace}
 \usepackage{hyperref}
@@ -125,20 +125,30 @@
 \vspace*{0.25em}
 \TextEntry{Montreal, QC, Canada \textbullet\hspace*{0.05em} 
 US and Canadian Citizen}
-\TextEntry{\small{+1 (514) 430-6498} $\vert$ \large\href{mailto:samsonstannus@gmail.com}{samsonstannus@gmail.com} $\vert$ \href{https://github.com/SamsonStannus}{\faGithub/SamsonStannus} $\vert$  \href{https://www.linkedin.com/in/samsonstannus/}{\faLinkedin/SamsonStannus}}
+\TextEntry{\large\href{mailto:samsonstannus@gmail.com}{samsonstannus@gmail.com} $\vert$ \href{https://github.com/SamsonStannus}{\faGithub/SamsonStannus} $\vert$  \href{https://www.linkedin.com/in/samsonstannus/}{\faLinkedin/SamsonStannus}}
 
 
 %%% Work experience
 %%% ------------------------------------------------------------
 \NewPart{Work experience}
 \vspace*{-0.5em}
-\WorkEntry{Senior Machine Learning Engineer}{Apr '20 - Current}
+
+\WorkEntry{Senior Machine Learning Engineer II, Technical Lead}{Jul '22 - Current}
 {Unity Technologies, Ads Engineering Team}
 {\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
-  \item Architected a real-time ad unit optimization system to reduce UI experimentation risk.
-  \item Improved AB testing processes as an acting team lead, which allowed the team to rapidly test over 400 UI experiments, leading to a 9\% increase in net revenue for Unity Ads.
-  \item Architected a ML system to predict the bidders who will respond to auction requests, which reduced Unity Ads exchange egress costs by 50\%.
-  \item Effectively collaborated with globally distributed teams as part of an urgent taskforce, \\delivering a new ad campaign type product to beta clients a month earlier than planned.
+  \item Optimized ad campaign valuation prediction service, which reduced the cost of operation by 15\% and latency by 75\%
+  \item Effectively collaborated with globally distributed teams, delivering a new ad campaign type product to beta clients a month earlier than planned
+  \item Architected CI/CD pipeline for ML model serving, which stopped erroneously configured ML models from being deployed to prod
+\end{itemize}}
+
+\sepspace
+
+\WorkEntry{Senior Machine Learning Engineer I}{Apr '20 - Jul '22}
+{Unity Technologies, Ads Engineering Team}
+{\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
+  \item Architected a real-time ad unit optimization system to reduce UI experimentation risk
+  \item Improved UI AB testing experiment practices, which increased Unity Ads net revenue by 9\%
+  \item Architected a ML system to optimize bid requests, which reduced ads exchange egress costs by 50\%
 \end{itemize}}
 
 \sepspace
@@ -146,7 +156,7 @@ US and Canadian Citizen}
 \WorkEntry{Machine Learning Software Developer I}{Sep '19 - Apr '20}
 {Borealis AI, Engineering Team}
 {\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
-  \item Rebuilt ETL pipeline using Airflow to dynamically scale out a Spark cluster saving 96\% of monthly costs over previous implementation.
+  \item Optimized ETL pipeline using Airflow to dynamically scale Spark cluster saving 96\% of monthly costs
 \end{itemize}}
 
 \sepspace
@@ -154,18 +164,17 @@ US and Canadian Citizen}
 \WorkEntry{Software Developer I}{Mar '18 - Sep '19}
 {Expedia Group, Geography Team}
 {\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
-  \item Collaborated with geographers and data scientists to import 100,000+ geographic entities to cover 99\% of destination searches reported by Google.
-  \item Developed a computer vision application to generate geographical boundaries from images.
-  \item Created React application to edit geometry which enabled geographers to fix 500+ invalid geo entities.
+  \item Built service to bulk import and deduplicate 100,000+ geographic entities using ML
+  \item Developed a computer vision application to generate geographical boundaries from images
+  \item Created React application to edit geometry which enabled geographers to fix 500+ polygons
 \end{itemize}}
 
 \sepspace
 
 \WorkEntry{Associate Software Developer}{Jan '17 - Mar '18}
-{Expedia Group, Content Systems Team/Geography Team}
+{Expedia Group, Content Systems Team}
 {\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
-  \item Built applications to bulk import geo-datasets and deduplicate entities using ML. 
-  \item Rebuilt RESTful Image processing web services to utilize a Kafka streaming architecture which reduced the latency of read and update requests by 88\%.
+  \item Built image processing pipeline with Kafka which reduced the latency of image uploads by 88\%
 \end{itemize}}
 
 \sepspace
@@ -173,8 +182,8 @@ US and Canadian Citizen}
 \WorkEntry{Software Developer Intern}{Jan '16 - Sep '16}
 {Expedia Group, Content Systems Team}
 {\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
-  \item Migrated image processing pipeline to AWS infrastructure reducing costs by 95\%.
-  \item Built a custom log-formatter to aid in issue investigation and report creation.
+  \item Migrated image processing pipeline to AWS infrastructure reducing costs by 95\%
+  \item Built a custom log-formatter to aid in issue investigation and report creation
 \end{itemize}}
 
 %%% Education
@@ -185,9 +194,9 @@ US and Canadian Citizen}
 {Bachelor of Science}
 {Computer Science}
 {\begin{itemize}[itemsep=-0.25em, topsep=0.25em, leftmargin=*]
-  \item Organized the 2016 annual McGill hackathon (McHacks) for 600+ hackers.
-  \item Represented McGill at the 2016 Ubisoft Game Lab Competition.
-  \item Completed advanced courses in Machine Learning and Computer Graphics.
+  \item Organized the 2016 annual McGill hackathon (McHacks) for 600+ hackers
+  \item Represented McGill at the 2016 Ubisoft Game Lab Competition
+  \item Completed advanced courses in Machine Learning and Computer Graphics
 \end{itemize}}
 
 % %%% Projects and Accolades
@@ -217,7 +226,7 @@ US and Canadian Citizen}
 %%% ------------------------------------------------------------
 \NewPart{Skills}
 \vspace*{-0.5em}
-\begin{tabular}{@{}p{200px}p{225px}}
+\begin{tabular}{@{}p{200px}p{250px}}
 \noindent \usefont{OT1}{phv}{b}{n} Programming & 
 \noindent \usefont{OT1}{phv}{b}{n} Software and Frameworks \\
 \noindent \usefont{OT1}{phv}{m}{n} Python, GoLang, Scala, Java, & 
